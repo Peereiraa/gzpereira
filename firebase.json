@@ -1,7 +1,7 @@
 {
   "hosting": {
     "public": "public",  
-    "cleanUrls": true,    
+    "cleanUrls": true,
     "rewrites": [
       {
         "source": "/perfil",
@@ -15,6 +15,7 @@
         "source": "/contact",
         "destination": "/contact.html"
       }
-    ]
+    ],
+    "errorPage": "/404.html" 
   }
 }
