@@ -1,7 +1,7 @@
-# Ignorar archivos generados por Firebase
-firebase-debug.log
-firebase.json
-.firebaserc
-
-# Ignorar node_modules si estás usando npm
 node_modules/
+.firebase/
+firebase-debug.log
+.firebaserc
+.github/
+.DS_Store
+Thumbs.db
