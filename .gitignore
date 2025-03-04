@@ -1,5 +1,7 @@
-node_modules/
-.firebase/
-.firebaserc
+# Ignorar archivos generados por Firebase
+firebase-debug.log
 firebase.json
-public/
+.firebaserc
+
+# Ignorar node_modules si estás usando npm
+node_modules/

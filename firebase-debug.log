@@ -19,3 +19,28 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\papet\Downloads\DAW\Portafolio
 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-04T20:01:31.601Z] Checked if tokens are valid: true, expires at: 1741122006598
+[debug] [2025-03-04T20:01:31.601Z] Checked if tokens are valid: true, expires at: 1741122006598
+[debug] [2025-03-04T20:01:31.603Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-03-04T20:01:32.226Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-03-04T20:01:32.226Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project gzpereira (gzpereira) 
+[info] 
+=== Hosting Setup
+[debug] [2025-03-04T20:01:34.518Z] Checked if tokens are valid: true, expires at: 1741122006598
+[debug] [2025-03-04T20:01:34.518Z] Checked if tokens are valid: true, expires at: 1741122006598
+[debug] [2025-03-04T20:01:34.519Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gzpereira [none]
+[debug] [2025-03-04T20:01:34.803Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gzpereira 200
+[debug] [2025-03-04T20:01:34.804Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gzpereira {"projectId":"gzpereira","projectNumber":"328267650331","displayName":"gzpereira","name":"projects/gzpereira","resources":{"hostingSite":"gzpereira"},"state":"ACTIVE","etag":"1_f72a437f-ae01-4906-8041-7a483b99f1ee"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
