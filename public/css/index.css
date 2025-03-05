@@ -101,12 +101,6 @@ body {
     justify-items: center;
 }
 
-.language img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
 .language p {
     font-size: 0.9em;
     color: #ccc;
@@ -152,8 +146,10 @@ body {
 .navbar ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar ul li {
@@ -199,3 +195,92 @@ body {
     font-size: 14px;
     white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .info h1 {
+        font-size: 1.6em;
+    }
+
+    .nickname {
+        font-size: 1em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .social-links {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .languages {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 10px;
+    }
+
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info h1 {
+        font-size: 1.4em;
+    }
+
+    .nickname {
+        font-size: 0.9em;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    .contact-button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+    
+    
+}
+
+@media (max-width: 383px){
+    .navbar {
+        position: -webkit-sticky;
+        position: fixed;
+        bottom: 5;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        z-index: 10;
+        padding: 10px 20px;
+        
+    }
+}
+
+

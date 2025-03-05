@@ -1,21 +1,23 @@
 {
   "hosting": {
-    "public": "public",  
-    "cleanUrls": true,
+    "public": "public/mant", 
     "rewrites": [
       {
-        "source": "/perfil",
-        "destination": "/perfil.html"
-      },
-      {
-        "source": "/about",
-        "destination": "/about.html"
-      },
-      {
-        "source": "/contact",
-        "destination": "/contact.html"
+        "source": "/**",  
+        "destination": "/index.html"
       }
     ],
-    "errorPage": "/404.html" 
+    "headers": [
+      {
+        "source": "/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-store, no-cache, must-revalidate, proxy-revalidate"
+          }
+        ]
+      }
+    ],
+    "errorPage": "/404.html"  
   }
 }

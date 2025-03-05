@@ -39,7 +39,7 @@ body {
     margin-left: 50px;
     margin-top: 50px;
     max-height: 80vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-right: 20px;
 }
 
@@ -272,3 +272,87 @@ body {
     font-size: 14px;
     white-space: nowrap;
 }
+
+@media (max-width: 1007px) {
+    body {
+        height: auto;
+        overflow-y: auto;
+        margin-top: 2px;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 5%;
+        margin-bottom: 7vh; 
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-column {
+        overflow: visible;
+        max-height: none; 
+        min-height: 100%; 
+        padding-bottom: 20px; 
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar{
+        position: fixed;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        overflow-y: auto;
+        margin-top: 2px;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 5%;
+        margin-bottom: 7vh; 
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-column {
+        overflow: visible;
+        max-height: none; 
+        min-height: 100%; 
+        padding-bottom: 20px; 
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar{
+        position: fixed;
+    }
+}
+
+
+
+
