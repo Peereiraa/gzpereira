@@ -1,12 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #121212;
-    background-size: 300% 300%;
-    animation: gradientBackground 5s linear infinite;
+    background-color: #050505;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(0.00, 49%, 32%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(359.29, 78%, 28.000000000000004%) 0, transparent 55%);
     color: #fff;
-    height: auto;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
@@ -46,6 +46,11 @@ body {
     align-items: center;
     margin: 0 auto;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px) saturate(77%);
+    -webkit-backdrop-filter: blur(12px) saturate(77%);
+    background-color: rgba(14, 10, 10, 0.69);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .experience-card:hover {
@@ -114,7 +119,7 @@ body {
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -154,8 +159,26 @@ body {
     font-size: 1.8em;
 }
 
+.navbar ul li.active .icon-container {
+    background-color: #007aff;
+}
+
 .navbar ul li .icon-container {
     background-color: #333;
     padding: 10px;
     border-radius: 8px;
+}
+
+.navbar ul li:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
 }

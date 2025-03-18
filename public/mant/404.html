@@ -16,8 +16,10 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #121212;
-            background-size: 300% 300%;
+            background-color: #000000;
+            background-image:
+                radial-gradient(at 47% 33%, hsl(0.00, 47%, 37%) 0, transparent 59%),
+                radial-gradient(at 82% 65%, hsl(0.00, 48%, 41%) 0, transparent 55%);
             animation: gradientBackground 5s linear infinite;
             color: #fff;
             height: 100vh;
@@ -26,6 +28,7 @@
             align-items: center;
             flex-direction: column;
             overflow: hidden;
+
         }
 
         h1 {
@@ -33,6 +36,7 @@
             color: #ff4f58;
             margin-bottom: 20px;
             text-align: center;
+
         }
 
         p {
@@ -40,6 +44,7 @@
             color: #ccc;
             text-align: center;
             margin-bottom: 30px;
+
         }
 
         .message {
@@ -51,6 +56,11 @@
             width: 80%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px) saturate(179%);
+            -webkit-backdrop-filter: blur(10px) saturate(179%);
+            background-color: rgba(0, 0, 0, 0.78);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
         }
 
         .message h1 {
@@ -72,20 +82,6 @@
 
         .back-button:hover {
             background-color: #ff1e28;
-        }
-
-        @keyframes gradientBackground {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
         }
     </style>
 </head>
