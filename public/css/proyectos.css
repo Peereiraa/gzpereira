@@ -54,6 +54,7 @@ body {
     width: 100%;
     max-width: 1950px;
     margin-bottom: 60px;
+    padding-top: 30px;
 }
 
 .card {

@@ -9,12 +9,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <div class="overlay" id="overlay"></div>
     <div class="container">
-        
+        <div class="info-icon" onclick="togglePopup()">
+            <i class="fas fa-info-circle"></i>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>INFORMACIÓN</h2>
+                <p style="color: red;">TAREAS <i class="fas fa-exclamation-circle" style="color: red;"></i></p>
+                <ul style="margin-bottom: 30px;">
+                    <li>Añadir nueva pagina de gustos personales</li>
+                    <li>Preparar documentación</li>
+                </ul>
+    
+                <p style="color: orange;">EN DESARROLLO <i class="fas fa-cogs" style="color: orange;"></i></p>
+                <ul style="margin-bottom: 30px;">
+                    <li>Overlay adaptado a dispositivos moviles</li>
+                    <li>Revision de optimizaciones</li>
+                </ul>
+    
+                <p style="color: green;">FINALIZADAS <i class="fas fa-check-circle" style="color: green;"></i></p>
+                <ul style="margin-bottom: 30px;">
+                    <li>Pruebas completadas</li>
+                    <li>Overlay para pantallas grandes</li>
+                </ul>
+    
+                <button class="close-popup" onclick="togglePopup()">Cerrar</button>
+            </div>
+        </div>
+
         <div class="card">
             <div class="photo">
                 <img src="img/asdasdas.jpg" alt="Foto de perfil">
             </div>
+
             <div class="info">
                 <h1>Pablo Pereira</h1>
                 <p class="nickname">Me suelen llamar Pereira 👋</p>
@@ -81,5 +112,15 @@
             <li class="contact" title="Proyectos"><a href="proyectos.html"><i class="fa-solid fa-diagram-project"></i></a></li>
         </ul>
     </nav>
+
+    <script>
+        function togglePopup() {
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+            popup.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.classList.toggle('modal-active');  // Deshabilitar scroll y fondo
+        }
+    </script>
 </body>
 </html>
